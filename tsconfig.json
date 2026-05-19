@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "isolatedModules": true,
+    "module": "preserve",
+    "target": "ES2022",
+    "strict": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["**/*.ts", "**/*.js", "**/*.d.ts"]
+}
