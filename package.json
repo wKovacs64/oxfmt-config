@@ -52,7 +52,7 @@
     "@changesets/cli": "2.31.0",
     "@wkovacs64/eslint-config": "7.14.1",
     "eslint": "9.39.4",
-    "oxfmt": "0.54.0",
+    "oxfmt": "0.55.0",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
