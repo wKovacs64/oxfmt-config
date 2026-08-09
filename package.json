@@ -1,32 +1,60 @@
 {
-  "name": "@wkovacs64/oxfmt-config",
-  "version": "1.0.0",
-  "private": false,
-  "description": "@wKovacs64 Oxfmt config",
-  "keywords": [
-    "oxfmt",
-    "oxfmtconfig"
-  ],
-  "homepage": "https://github.com/wKovacs64/oxfmt-config#readme",
-  "bugs": {
-    "url": "https://github.com/wKovacs64/oxfmt-config/issues"
-  },
   "license": "",
   "author": {
     "name": "Justin Hall",
     "email": "justin.r.hall@gmail.com"
   },
+  "homepage": "https://github.com/wKovacs64/oxfmt-config#readme",
+  "keywords": [
+    "oxfmt",
+    "oxfmtconfig"
+  ],
+  "bugs": {
+    "url": "https://github.com/wKovacs64/oxfmt-config/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wKovacs64/oxfmt-config.git"
+  },
+  "packageManager": "pnpm@11.21.0",
+  "devDependencies": {
+    "oxfmt": "0.63.0",
+    "oxlint": "1.77.0",
+    "@wkovacs64/oxlint-config": "0.1.0",
+    "@wkovacs64/eslint-config": "8.0.3",
+    "@changesets/cli": "3.0.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "@changesets/changelog-github": "1.0.0",
+    "typescript": "6.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "name": "@wkovacs64/oxfmt-config",
+  "types": "index.d.ts",
+  "scripts": {
+    "changeset": "changeset",
+    "changeset:version": "changeset version && pnpm install --lockfile-only",
+    "changeset:publish": "changeset publish",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint --type-aware .",
+    "typecheck": "tsc"
   },
   "files": [
     "index.js",
     "index.d.ts"
   ],
-  "type": "module",
+  "description": "@wKovacs64 Oxfmt config",
+  "private": false,
   "main": "index.js",
-  "types": "index.d.ts",
+  "peerDependencies": {
+    "oxfmt": ">=0.45.0 <1"
+  },
+  "type": "module",
   "exports": {
     ".": {
       "types": "./index.d.ts",
@@ -35,31 +63,5 @@
     },
     "./package.json": "./package.json"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "changeset": "changeset",
-    "changeset:version": "changeset version && pnpm install --lockfile-only",
-    "changeset:publish": "changeset publish",
-    "format": "oxfmt",
-    "format:check": "oxfmt --check",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "typecheck": "tsc"
-  },
-  "devDependencies": {
-    "@changesets/changelog-github": "1.0.0",
-    "@changesets/cli": "3.0.0",
-    "@wkovacs64/eslint-config": "8.0.3",
-    "eslint": "9.39.5",
-    "oxfmt": "0.63.0",
-    "typescript": "6.0.3"
-  },
-  "peerDependencies": {
-    "oxfmt": ">=0.45.0 <1"
-  },
-  "engines": {
-    "node": ">=20.19.0"
-  },
-  "packageManager": "pnpm@11.21.0"
+  "version": "1.0.0"
 }
