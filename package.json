@@ -44,7 +44,7 @@
     "changeset:publish": "changeset publish",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
-    "lint": "oxlint .",
+    "lint": "oxlint",
     "typecheck": "tsc"
   },
   "devDependencies": {
