@@ -174,10 +174,10 @@ importers:
         version: 3.0.3
       '@wkovacs64/eslint-config':
         specifier: 8.0.3
-        version: 8.0.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(typescript@7.0.2))(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(@typescript-eslint/utils@8.67.0(typescript@7.0.2))(typescript@7.0.2)
+        version: 8.0.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(typescript@7.0.2)
       '@wkovacs64/oxlint-config':
-        specifier: 0.2.2
-        version: 0.2.2(oxlint-tsgolint@7.0.2003)(oxlint@1.86.0(oxlint-tsgolint@7.0.2003))
+        specifier: 0.3.0
+        version: 0.3.0(oxlint-tsgolint@7.0.2003)(oxlint@1.86.0(oxlint-tsgolint@7.0.2003))
       oxfmt:
         specifier: 0.71.0
         version: 0.71.0
@@ -1087,8 +1087,8 @@ packages:
     resolution: {integrity: sha512-VenLJRBzEVZbAiJ0LXk8MDvCfr8PDvKT8FibkCGjTIyNT+8NhsbNZ6OawZIVZOXEc/aGyPIFtsVnoQNXRFZDmg==}
     engines: {node: ^18.18.0 || >=20.0.0}
 
-  '@wkovacs64/oxlint-config@0.2.2':
-    resolution: {integrity: sha512-CEFeVHclhGQztEkWSnVMl7iVsrc5nSXiYJ7T2XNsD8Xx26Bzsw+E8sZjE9RRRIjn4MUJiNK/Xirv9zfFFtE5Uw==}
+  '@wkovacs64/oxlint-config@0.3.0':
+    resolution: {integrity: sha512-LTf6xsV5hfUppVwp48S5NbTtdEnhSBjBvCBccLXWWF5c+yIHE1S7j5Z+cnFnl8zKxAtZiLN1ztS5LqRPeZiDOA==}
     engines: {node: '>=24'}
     peerDependencies:
       oxlint: '>=1.79.0 <2'
@@ -2735,23 +2735,22 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vitest/eslint-plugin@1.6.27(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(typescript@7.0.2))(typescript@7.0.2)':
+  '@vitest/eslint-plugin@1.6.27(typescript@7.0.2)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.67.0
       '@typescript-eslint/utils': 8.67.0(typescript@7.0.2)
     optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 8.67.0(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(typescript@7.0.2)
       typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
-  '@wkovacs64/eslint-config@8.0.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(typescript@7.0.2))(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(@typescript-eslint/utils@8.67.0(typescript@7.0.2))(typescript@7.0.2)':
+  '@wkovacs64/eslint-config@8.0.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(typescript@7.0.2)':
     dependencies:
       '@eslint/compat': 2.1.0
       '@eslint/js': 10.0.1
-      '@vitest/eslint-plugin': 1.6.27(@typescript-eslint/eslint-plugin@8.67.0(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(typescript@7.0.2))(typescript@7.0.2)
+      '@vitest/eslint-plugin': 1.6.27(typescript@7.0.2)
       eslint-plugin-astro: 3.1.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@typescript-eslint/parser@8.67.0(typescript@7.0.2))(eslint-plugin-jsx-a11y@6.10.2)(typescript-eslint@8.67.0(typescript@7.0.2))
-      eslint-plugin-import-x: 4.17.1(@typescript-eslint/utils@8.67.0(typescript@7.0.2))
+      eslint-plugin-import-x: 4.17.1
       eslint-plugin-jest-dom: 5.10.1
       eslint-plugin-jsx-a11y: 6.10.2
       eslint-plugin-playwright: 2.11.0
@@ -2773,7 +2772,7 @@ snapshots:
       - typescript
       - vitest
 
-  '@wkovacs64/oxlint-config@0.2.2(oxlint-tsgolint@7.0.2003)(oxlint@1.86.0(oxlint-tsgolint@7.0.2003))':
+  '@wkovacs64/oxlint-config@0.3.0(oxlint-tsgolint@7.0.2003)(oxlint@1.86.0(oxlint-tsgolint@7.0.2003))':
     dependencies:
       oxlint: 1.86.0(oxlint-tsgolint@7.0.2003)
       oxlint-tsgolint: 7.0.2003
@@ -3114,7 +3113,7 @@ snapshots:
       - '@emnapi/runtime'
       - supports-color
 
-  eslint-plugin-import-x@4.17.1(@typescript-eslint/utils@8.67.0(typescript@7.0.2)):
+  eslint-plugin-import-x@4.17.1:
     dependencies:
       '@typescript-eslint/types': 8.67.0
       comment-parser: 1.4.8
@@ -3125,8 +3124,6 @@ snapshots:
       semver: 7.8.5
       stable-hash-x: 0.2.0
       unrs-resolver: 1.12.2
-    optionalDependencies:
-      '@typescript-eslint/utils': 8.67.0(typescript@7.0.2)
     transitivePeerDependencies:
       - supports-color
 
